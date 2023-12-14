@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,700');
+
+* {
+box-sizing: border-box;
+margin: 0;
+padding: 0;	
+font-family: Raleway, sans-serif;
+}
+
+body {
+background: linear-gradient(90deg, #C7C5F4, #27dd27);		
+}
+h1{
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.nav-link{
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    margin-left:220px ;
+}
