@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h2{
+            text-align: center;
+            color: black;
+        }
+        form{
+            text-align: left;
+            border: 2px solid rgb(6, 92, 252);
+            max-width: 220px;
+            padding: 30px;
+            margin: 20px 500px;
+        }
+        button{
+            margin-top: 20px;
+            background-color: antiquewhite;
+            
+        }
+        a{
+            color: black;
+        }
+        input{
+            background-color: rgb(234, 239, 193);
+            margin: 5px;
+            border-radius: 10px;
+            height: 20px;
+        }
+        .in{
+            background-color: bisque;
+            width: 100px;
+            height: 30px;
+            
+        }
+        .in:hover{
+            background-color: rgb(180, 151, 113);
+            width: 150px;
+            height: 33px;
+            animation: both;
+            animation-delay: 1ms;
+            box-shadow: inset;
+            /* position: absolute; */
+            /* left: 100px; */
+        }
+    </style>
+</head>
+<body>
+    <button><a href="{% url 'home'%}">BACK</a></button>
+    <h2>Add employee</h2>
+    <hr>
+    <form action="" method="post">
+        {% csrf_token %}
+        {{f}}
+        <input class="in" type="submit" value="submit">
+    </form>
+
+
+    
+</body>
+</html>
